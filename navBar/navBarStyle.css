@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #e2eaf0;
+}
+
+#navBar {
+  width: 100%;
+  height: 13vh;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  border-bottom: 0.3vh solid #000000;
+}
+/*Primeira parte do menu*/
+#Logo {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1vw;
+}
+
+#imgLogo {
+  height: 13vh;
+  margin-left: 2.5vw;
+}
+
+#temaText {
+  font-size: 4vh;
+}
+
+/*Segunda parte do menu*/
+#menuButtons {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2vw;
+}
+
+.menuButton {
+  width: 7vw;
+  height: 5vh;
+  background-color: transparent;
+  font-size: 2.2vh;
+  border: 0.3vh solid #000000;
+  color: #000000;
+  border-radius: 0 40vw 40vw 40vw;
+  transition: 0.2s linear;
+}
+
+.menuButton:hover {
+  background-color: #3c78a5;
+  border-color: #3c78a5;
+  cursor: pointer;
+  color: white;
+}
+
+/*LAPTOP*/
+@media screen and (max-width: 1024px) {
+  .menuButton {
+    width: 9vw;
+  }
+
+  #lastMenuButton {
+    margin-right: 1vw;
+  }
+}
+
+/*TABLET*/
+@media screen and (max-width: 768px) {
+  .menuButton {
+    width: 10vw;
+    font-size: 2vh;
+  }
+  #lastMenuButton {
+    margin-right: 1vw;
+  }
+  #menuButtons {
+      gap: 1vw;
+  }
+}
+
+/*Mobile*/
+@media screen and (max-width: 425px) {
+    .menuButton {
+        visibility: hidden;
+    }
+
+    #mobileMenuButton {
+        position: absolute;
+        height: 8vh;
+        width: 12vw;
+        right: 3vw;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-content: space-around;
+        align-items: center;
+    }
+
+    .menuBar {
+        background-color: rgb(0, 0, 0);
+        height: 1vh;
+        width: 100%;
+        border-radius: 22vw;
+        transform: rotate(0deg);
+    }
+
+    /*Animação do menu mobile*/
+    @keyframes bar1Animation1 {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(75deg);
+        }
+    }
+
+    #bar1 {
+        transform: rotate(45deg);
+    }
+    #bar3 {
+        transform: rotate(-45deg);
+    }
+}
