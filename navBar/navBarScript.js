@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 let menuBar1 = document.getElementById("bar1");
                 let menuBar2 = document.getElementById("bar2");
                 let menuBar3 = document.getElementById("bar3");
+                let menuGUI = document.getElementById("menuButtons");
                 //Código do menu
                 let isMenuButtonClicked = false;
                 function menuMobile() {
@@ -33,6 +34,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         //--animação do menu--
 
                         //Guia de menu
+                        menuGUI.style.top = "0";
+
                     } else {
                         //Animação do menu
                         menuBar1.classList.remove("animationBar1In");
@@ -50,6 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         //--animação do menu--
 
                         //Guia de menu
+                        menuGUI.style.top = "-100vh";
                     }
                 };
 
