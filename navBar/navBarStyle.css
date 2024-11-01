@@ -20,6 +20,7 @@ body {
   justify-content: space-evenly;
   border-bottom: 0.3vh solid #000000;
 }
+
 /*Primeira parte do menu*/
 #Logo {
   width: 100%;
@@ -92,55 +93,175 @@ body {
     width: 10vw;
     font-size: 2vh;
   }
+
   #lastMenuButton {
     margin-right: 1vw;
   }
+
   #menuButtons {
-      gap: 1vw;
+    gap: 1vw;
   }
 }
 
 /*Mobile*/
+#burger {
+  position: fixed;
+  top: -100vh;
+  visibility: hidden;
+}
+
 @media screen and (max-width: 425px) {
-    .menuButton {
-        visibility: hidden;
+  #menuButtons {
+    position: fixed;
+    top: -100vh;
+  }
+
+  #navBar {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  #burger {
+    position: static;
+    visibility: visible;
+    background-color: transparent;
+    height: 8vh;
+    width: 20vw;
+    margin-right: 5vw;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+  }
+
+  .bar {
+    background-color: #000000;
+    width: 15vw;
+    height: 0.8vh;
+    border-radius: 22vw;
+    position: fixed;
+  }
+
+  #bar1 {
+    top: 4vh;
+    transform: rotate(0deg);
+  }
+
+  #bar2 {
+    top: 6vh;
+    width: 15vw;
+  }
+
+  #bar3 {
+    top: 8vh;
+    transform: rotate(0deg);
+  }
+
+  /*Animation*/
+  @keyframes animationBar1In {
+    from {
+      transform: rotate(0deg);
+      top: 4vh;
     }
 
-    #mobileMenuButton {
-        position: absolute;
-        height: 8vh;
-        width: 12vw;
-        right: 3vw;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: space-evenly;
-        align-content: space-around;
-        align-items: center;
+    to {
+      transform: rotate(45deg);
+      top: 5.8vh;
+    }
+  }
+
+  @keyframes animationBar1Out {
+    from {
+      transform: rotate(45deg);
+      top: 5.8vh;
     }
 
-    .menuBar {
-        background-color: rgb(0, 0, 0);
-        height: 1vh;
-        width: 100%;
-        border-radius: 22vw;
-        transform: rotate(0deg);
+    to {
+      transform: rotate(0deg);
+      top: 4vh;
+    }
+  }
+
+  @keyframes animationBar3In {
+    from {
+      transform: rotate(0deg);
+      top: 8vh
     }
 
-    /*Animação do menu mobile*/
-    @keyframes bar1Animation1 {
-        from {
-            transform: rotate(0deg);
-        }
-        to {
-            transform: rotate(75deg);
-        }
+    to {
+      transform: rotate(-45deg);
+      top: 5.8vh
+    }
+  }
+
+  @keyframes animationBar3Out {
+    from {
+      transform: rotate(-45deg);
+      top: 5.8vh
     }
 
-    #bar1 {
-        transform: rotate(45deg);
+    to {
+      transform: rotate(0deg);
+      top: 8vh
     }
-    #bar3 {
-        transform: rotate(-45deg);
+  }
+
+  @keyframes animationBar2In {
+    from {
+      width: 15vw;
     }
+
+    to {
+      width: 0;
+    }
+  }
+
+  @keyframes animationBar2Out {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 15vw;
+    }
+  }
+
+  /*Classes de animação*/
+  .animationBar2Out {
+    animation: animationBar2Out 0.3s linear;
+    width: 15vw;
+  }
+
+  .animationBar2In {
+    animation: animationBar2In 0.3s linear;
+    width: 0vw;
+  }
+
+  .animationBar3Out {
+    animation: animationBar3Out 0.3s linear;
+    transform: rotate(0deg);
+    top: 8vh
+  }
+
+  .animationBar3In {
+    animation: animationBar3In 0.3s linear;
+    transform: rotate(-45deg);
+    top: 5.8vh
+  }
+
+  .animationBar1In {
+    animation: animationBar1In 0.3s linear;
+    transform: rotate(45deg);
+    top: 5.8vh;
+  }
+
+  .animationBar1Out {
+    animation: animationBar1Out 0.3s linear;
+    transform: rotate(0deg);
+    top: 4vh;
+  }
 }
