@@ -1,0 +1,23 @@
+#img {
+    width: 100%;
+    background-color: #663399;
+    height: 50vh;
+}
+
+#Cards {
+    width: 100%;
+    background-color: rgb(50, 173, 157);
+    height: 50vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+}
+
+.cardBox {
+    width: 20vw;
+    height: 45vh;
+    background-color: red;
+}
