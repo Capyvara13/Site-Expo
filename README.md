@@ -3,6 +3,9 @@
     - Página Plus;
     - Página Educação;
     - Página Jogos;
+    - Adicionar a logo em todas as páginas;
 
 ## Itens em desenvolvimento.
-    - Menu Bar - Tiago
+    - Página inicial - Tiago
+## Itens já desenvolvidos:
+    - Responsividade da navBar;
