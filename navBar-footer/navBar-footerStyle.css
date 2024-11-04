@@ -417,3 +417,26 @@ body {
     margin-right: 2vw;
   }
 }
+
+
+
+/*rodapé*/
+footer{ width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.local{
+  margin-top: 2%;
+  margin-left: 1.5%;
+}
+.etec{
+  width: 15%;
+  margin-left: 70vh;
+  position: relative;
+  left: 20%;
+}
+.cps{
+  position: relative;
+  left: 15%;
+  width: 15%;
+}

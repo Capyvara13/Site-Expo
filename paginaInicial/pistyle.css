@@ -1,13 +1,12 @@
 #img {
     width: 100%;
-    background-color: #663399;
     height: 50vh;
+    background-color: pink;
 }
 
 #Cards {
     width: 100%;
-    background-color: rgb(50, 173, 157);
-    height: 50vh;
+    height: 80vh;
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
@@ -17,7 +16,111 @@
 }
 
 .cardBox {
+    width: 25vw;
+    height: 60vh;
+    border-radius: 2vw ;
+}
+
+/*CARD 1 - EDUCAÇÃO*/
+#card1 {
+    background-image: url(../img/ianaeducação.png);
+    background-position: left;
+    background-position-x: -1vw;
+    background-size: cover;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+#card1 h1 {
+    color: #ffffff;
+    position: relative;
+    font-size: 7vh;
+    left: -4vw;
+    top: -20vh;
+}
+
+#card1 button {
+    position: relative;
+    top: 24vh;
     width: 20vw;
-    height: 45vh;
-    background-color: red;
+    height: 8vh;
+    font-size: 5vh;
+    border: none;
+    border-radius: 1vw 1vw 0 0;
+    background-color: rgb(18, 88, 18);
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/*Card 2 - Jogos*/
+#card2 {
+    background-image: url(../img/iajogos.png);
+    background-position: left;
+    background-position-x: -1vw;
+    background-size: cover;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+#card2 h1 {
+    color: #ffffff;
+    position: relative;
+    font-size: 7vh;
+    left: -7vw;
+    top: -20vh;
+}
+
+#card2 button {
+    position: relative;
+    top: 24vh;
+    width: 20vw;
+    height: 8vh;
+    font-size: 5vh;
+    border: none;
+    border-radius: 1vw 1vw 0 0;
+    background-color: rgb(18, 88, 18);
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/*Card 3 - Plus +*/
+#card3 {
+    background-image: url(../img/roblox.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+#card3 h1 {
+    color: #ffffff;
+    position: relative;
+    font-size: 7vh;
+    left: -7vw;
+    top: -20vh;
+}
+
+#card3 button {
+    position: relative;
+    top: 24vh;
+    width: 20vw;
+    height: 8vh;
+    font-size: 5vh;
+    border: none;
+    border-radius: 1vw 1vw 0 0;
+    background-color: rgb(18, 88, 18);
+    color: #ffffff;
+    cursor: pointer;
 }

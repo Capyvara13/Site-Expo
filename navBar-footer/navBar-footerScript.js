@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    fetch('../navBar/navBarIndex.html')
+    fetch('../navBar-footer/navBar-footerIndex.html')
         .then(response => response.text())
         .then(html => {
             const doc = new DOMParser().parseFromString(html, 'text/html');
@@ -89,4 +89,20 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
     console.log('Barra de navegação carregada com sucesso!');
+
+
+    fetch('../navBar-footer/navBar-footerIndex.html')
+        .then(response => response.text())
+        .then(html => {
+            const docfooter = new DOMParser().parseFromString(html, 'text/html');
+            var div = docfooter.querySelector('#footerInserido');
+            if (div) {
+                document.querySelector('footer').appendChild(div);
+            } else {
+                console.error('Elemento #footerInserido não encontrado no HTML carregado');
+            }
+        });
+
+    console.log('Footer carregada com sucesso!');
+
 });
