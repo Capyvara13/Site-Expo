@@ -144,6 +144,7 @@ footer {
   #card2 h1,
   #card3 h1 {
     font-size: 4vh;
+    margin-left: 5vw;
   }
   #card2 {
     background-position-x: -10vw;
@@ -152,7 +153,9 @@ footer {
   #card2 button,
   #card3 button {
     top: 26vh;
+    border-radius: 2vw 2vw 0 0;
     font-size: 4vh;
+    height: 9vh;
   }
 }
 
@@ -197,6 +200,17 @@ footer {
   }
 }
 
+/*Mobile M*/
+@media screen and (max-width: 425px) {
+  #card1 h1,
+  #card2 h1,
+  #card3 h1 {
+    font-size: 4vh;
+    top: -17vh;
+    margin-left: 10vw;
+  }
+}
+
 /*Mobile S*/
 @media screen and (max-width: 320px) {
   #card1 h1 {
@@ -205,6 +219,12 @@ footer {
     left: -7vw;
   }
   
+  #card1,
+  #card2,
+  #card3 {
+    width: 70vw;
+  }
+
   #card3 h1 {
     font-size: 4vh;
     top: -17vh;
@@ -224,5 +244,9 @@ footer {
     width: 40vw;
     height: 10vh;
     border-radius: 4vw 4vw 0 0;
+  }
+
+  #temaText {
+    font-size: 3vh;
   }
 }
