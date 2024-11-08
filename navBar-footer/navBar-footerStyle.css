@@ -428,7 +428,7 @@ nav {
 
 
 /*rodapé*/
-footer{ 
+footer {
   width: 100%;
   height: 15vh;
   display: flex;
@@ -439,7 +439,7 @@ footer{
   align-items: center;
 }
 
-.local{
+.local {
   width: 100%;
 }
 
@@ -448,33 +448,39 @@ footer{
 }
 
 .logos {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: flex-end;
-    align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-.etec{
+.etec {
   height: 15vh;
 }
 
-.cps{
+.cps {
   height: 15vh;
 }
 
-/*MOBILE L*/  
+/*MOBILE L*/
 @media screen and (max-width: 425px) {
-  footer{ 
-    margin-top: 20vh;
-  }
   .local p {
     font-size: 2vh;
   }
-  .etec, .cps{
+
+  .etec,
+  .cps {
     height: 10vh;
+  }
+}
+
+/*MOBILE S*/
+@media screen and (max-width: 320px) {
+  .local p {
+    font-size: 1.5vh;
   }
 }
