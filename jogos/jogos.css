@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+/* Sombra */
+.txt_tema, .sobre {
+    box-shadow: 0vw 0.8vh 1.0vh rgb(1, 0, 22);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Padrão texto de balões */
+.descricao {
+    font-size: 3.0vh;
+    font-weight: bolder;
+    color: white;
+}
+
+.titulo {
+    font-size: 4.5vh;
+    font-weight: bolder;
+    color: white;
+}
+
+.sobre {
+    width: 15vw;
+    height: 30vh; 
+    color: white;
+    background-color: rgb(77, 79, 83);
+    border-radius: 100%;
+    align-items: center;
+    text-align: center;
+    background-image: url(imgs/processos.png);
+    background-size: cover;
+    background-position: center;
+    transition: 0.6s;
+}
+
+.sobre:hover {
+    transform: scale(1.05);
+}
+
+.txt1 {
+    display: flex;
+    font-size: 4.0vh;
+    text-shadow: 0.3vh, 0.3vh, 1.0vh black;
+}
+
+.txt2 {
+    font-size: 3.0vh;
+    text-shadow: 0.3vh, 0.3vh, 1.0vh black;
+}
+
+/* Layout dos processos */
+.tema1, .tema2_fundo {
+    height: 40vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.tema2_fundo {
+    background-color: rgba(2, 0, 0, 0.349);
+}
+
+.tema1 {
+    background-color: rgb(255, 255, 255);
+}
+
+.txt_tema {
+    width: 60%;
+    background-color: rgb(77, 79, 83);
+    border: solid 4.0vh rgb(77, 79, 83);
+    border-radius: 1.0vh;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.txt_tema:hover {
+    transform: scale(1.02);
+}
+
+/*LAPTOP L*/
+@media screen and (max-width: 1440px) {
+    /* Mudar tamanho da fonte */
+    .sobre h2 {
+        font-size: 3.5vh;
+    }
+    .txt_tema h2 {
+        font-size: 3.5vh;
+    }
+    .txt_tema p {
+        font-size: 2.5vh;
+    }
+}
+
+/*LAPTOP*/ 
+@media screen and (max-width: 1024px) {
+    .sobre {
+        width: 20vw;
+        height: 25vh;
+    }
+}
+
+/*TABLET*/
+@media screen and (max-width: 768px) {
+    .tema1 {
+        flex-direction: column-reverse;
+        gap: 3vw;
+        height: 50vh;
+    }
+
+    .sobre {
+        border-radius: 1vw;
+        width: 80%;
+        height: 10%;
+    }
+    .tema2_fundo {
+        display: flex;
+        flex-direction: column;
+        gap: 3vw;
+        height: 50vh;
+    }
+    #tema11 {
+        margin-top: 12vh;
+    }
+    #tema12 {
+        margin-top: 7vh;
+        margin-bottom: 3vh;
+    }
+}
+
+/*MOBILE L*/
+@media screen and (max-width: 425px) {
+    #tema11 {
+        margin-top: 10vh;
+        height: 80vh;
+    }
+    .tema2_fundo {
+        height: 80vh;
+    }
+    #tema12 {
+        height: 100vh;
+    }
+
+    .tema2_fundo h2, .tema1 h2, .tema2_fundo p, .tema1 p {
+        text-align: left;
+    }
+}
+
+/*MOBILE M*/
+@media screen and (max-width: 375px) {
+    #tema11 {
+        margin-top: 10vh;
+        height: 80vh;
+    }
+    .tema2_fundo {
+        height: 80vh;
+    }
+    #tema12 {
+        height: 110vh;
+    }
+}
+
+/*MOBILE S*/
+@media screen and (max-width: 320px) {
+    #tema11 {
+        margin-top: 12vh;
+        height: 90vh;
+    }
+    .tema2_fundo {
+        height: 90vh;
+    }
+    #tema12 {
+        height: 140vh;
+    }
+}

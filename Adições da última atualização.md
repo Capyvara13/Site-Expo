@@ -1,3 +1,8 @@
+# 1.3 - 19-11-24 (SR = Sem Registro)
+    - Página de jogos; SR:SR
+    - Responsividade da página de jogos; SR:SR
+    - Correções na responsividade do footer; 12:22
+
 # 1.2 - 08-11-24
     - Página da Educação completa e responsiva; 09:06
     - Correções na página principal; 09:15
